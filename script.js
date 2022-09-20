@@ -57,6 +57,14 @@ function playRound(playerChoice, computerChoice) {
     }
     return "Something went wrong!";
 }
-let playerChoice = window.prompt("Rock, Paper or Scissors?");
-let computerChoice = getComputerChoice();
-console.log(playRound(playerChoice, computerChoice));
+
+function game() {
+    for(let i=1; i<=5; i++) {
+        let playerChoice = window.prompt("Rock, Paper or Scissors?");
+        let computerChoice = getComputerChoice();
+        console.log(`\nROUND ${i}:`)
+        console.log(playRound(playerChoice, computerChoice));
+    }
+}
+
+game();
