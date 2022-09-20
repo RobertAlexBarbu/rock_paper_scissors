@@ -71,6 +71,18 @@ function game() {
         console.log(`\nROUND ${i}:`)
         console.log(playRound(playerChoice, computerChoice));
     }
+    switch(true) {
+        case score==0:
+            console.log("\nFINAL RESULT: Draw! No one won");
+            break;
+        case score < 0:
+            console.log("\nFINAL RESULT: You Lost! The computer won");
+            break;
+        case score > 0:
+            console.log("\nFINAL RESULT: You Won!")
+            break;
+    }
+    console.log(`FINAL SCORE: ${score}`);
 }
 
 let score=0;
