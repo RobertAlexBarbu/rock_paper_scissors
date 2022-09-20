@@ -22,9 +22,11 @@ function playRound(playerChoice, computerChoice) {
                 return "Draw! Both you and the computer chose the same thing";
                 break;
             case "paper":
+                score--;
                 return "You Lost! Paper beats Rock";
                 break;
             case "scissors":
+                score++;
                 return "You Won! Rock beats Scissors";
                 break;
         }
@@ -32,12 +34,14 @@ function playRound(playerChoice, computerChoice) {
     if(playerChoice === "paper") {
         switch(computerChoice) {
             case "rock":
+                score++;
                 return "You Won! Paper beats Rock";
                 break;
             case "paper":
                 return "Draw! Both you and the computer chose the same thing";
                 break;
             case "scissors":
+                score--;
                 return "You Lost! Scissors beats Paper"
                 break;
         }
@@ -45,9 +49,11 @@ function playRound(playerChoice, computerChoice) {
     if(playerChoice == "scissors") {
         switch(computerChoice) {
             case "rock":
+                score--;
                 return "You Lost! Rock beats Scissors";
                 break;
             case "paper":
+                score++;
                 return "You Won! Scissors beats Paper";
                 break;
             case "scissors":
@@ -67,4 +73,5 @@ function game() {
     }
 }
 
+let score=0;
 game();
