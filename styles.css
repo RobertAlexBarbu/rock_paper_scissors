@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(228, 222, 222);
+    height: 98vh;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: monospace;
+}
+
+
+.game {
+    background-color: white;
+    width: 65%;
+    height: 94vh;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+
+.game h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.buttons {
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons button {
+    width: 14vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.5vw;
+    border: 0px solid black;
+    border-radius: 15px;
+}
+.rockBtn {
+    background-color: rgb(233, 65, 65);
+}
+.paperBtn {
+    background-color: rgb(241, 175, 53);
+}
+.scissorsBtn {
+    background-color: rgb(33, 136, 33);
+}
+.rockBtn, .paperBtn, .scissorsBtn, .againBtn {
+    color: white;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.score-section h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.scores {
+    padding: 0px 60px 0px 60px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.lastRound {
+    padding: 0px 60px 0px 60px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.message-section div {
+    padding: 0px 60px 0px 60px;
+    font-size: 22px;
+}
+.result {
+    margin-top: 12px;
+}
+
+
+.gameOver {
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 4vh;
+}
+.againBtn {
+    margin-top: 1vh;
+    height: 6vh;
+    width: 20vw;
+    align-self: center;
+    border-radius: 15px;
+    background-color: gray;
+    font-size: 2.5vw;
+    border-width: 0;
+}
